@@ -1,0 +1,447 @@
+body{
+	margin:0;
+	font-family:"Palatino Linotype", "Book Antiqua",serif;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+/*Header*/
+
+header{
+	display:flex;
+	width:98%;
+	height:auto;
+	background: linear-gradient(180deg, #000, #4f0505 80%);
+	justify-content:space-between;
+	padding:1%;
+}
+
+.logo{
+	width:25%;
+	height:auto;
+}
+
+nav{
+	display:flex;
+	width:70%;
+	height:auto;
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+nav a:link, nav a:visited{
+	font-size:18px;
+	width:18%;
+	height:auto;
+	text-decoration:none;
+	color:#ecc788;
+	text-align:center;
+}
+
+nav a:hover{
+	color:#fcdca4;
+	font-weight:bold;
+	font-size:20px;
+	transition:all 0.6s;
+}
+
+/*Main*/
+
+/*Index*/
+
+main{
+	display:flex;
+	width:100%;
+	height:auto;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.slider{
+	width:100%;
+	height:auto;
+}
+
+main h1{
+	font-size:33px;
+	color:#4f0505;
+}
+
+p{
+	font-size:20px;
+	color:#a35502;
+	font-weight:bold;
+}
+
+.padre{
+	display:flex;
+	width:100%;
+	height:auto;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+}
+
+.ficha{
+	display:flex;
+	width:23%;
+	height:auto;
+	flex-direction:column;
+	align-items:center;
+	border-style:solid;
+	border-color:#c9c9c9;
+	border-width:2px;
+	padding:1.5%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+	/*Dentro de .ficha*/
+	
+	.imagen{
+		width:15%;
+		height:auto;
+	}
+	
+	.texto{
+		width:100%;
+		height:auto;
+	}
+	
+		/*Dentro de .texto*/
+		
+		.texto h2{
+			font-size:20px;
+			text-align:center;
+			color:#b5900b;
+		}
+		
+		.texto p{
+			font-size:16px;
+			line-height:20px;
+			color:#707070;
+			text-align:justify;
+		}
+
+/*Efectos de .ficha*/
+	
+.ficha:hover{
+	/*width:24%;*/
+	height:auto;
+	box-shadow:0px 0px 3px #000;
+	transition:all 1s;
+	border-radius:10px;
+}
+
+/*Habitaciones*/
+
+.std{
+	display:flex;
+	width:98%;
+	height:auto;
+	padding:1%;
+	align-items:center;
+}
+
+.sup{
+	display:flex;
+	width:98%;
+	height:auto;
+	padding:1%;
+	align-items:center;
+	justify-content:center;
+	flex-direction:row-reverse;
+}
+
+	/*Dentro de .std*/
+	
+	.std .imagen2{
+		width:45%;
+		height:auto;
+		margin-right:2%;
+	}
+	
+	.std .texto2{
+		width:50%;
+		height:auto;
+	}
+	
+		/*Dentro de .texto2 y .imagen2*/
+		
+		.texto2 h2{
+			font-size:20px;
+			text-align:center;
+			color:#b5900b;
+		}
+		
+		.texto2 p{
+			font-size:16px;
+			line-height:26px;
+			color:#707070;
+			text-align:justify;
+		}
+		
+		.texto2 ul{
+			font-size:14px;
+			line-height:30px;
+			color:#707070;
+			text-align:justify;
+			font-weight:bold;
+		}
+		
+		.imagen2 img{
+			border-radius:10px;
+			box-shadow:3px 3px 8px #828282;
+		}
+		
+	/*Dentro de .sup*/
+	
+	.sup .imagen2{
+		width:45%;
+		height:auto;
+		margin-left:2%;
+	}
+	
+	.sup .texto2{
+		width:50%;
+		height:auto;
+	}
+	
+		/*Dentro de .texto2 y .imagen2*/
+		
+		.sup .imagen2 img{
+			border-radius:10px;
+			box-shadow:-3px 3px 8px #828282;
+		}
+
+/*Footer*/
+
+footer{
+	display:flex;
+	width:98%;
+	height:auto;
+	background: linear-gradient(0deg, #000, #4f0505 80%);
+	padding:1%;
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+.logo_alt{
+	width:7%;
+	height:auto;
+}
+
+.contacto{
+	display:flex;
+	width:30%;
+	height:auto;
+	flex-wrap:wrap;
+}
+
+	/*Dentro de .contacto*/
+	
+	.contacto p{
+		width:100%;
+		height:auto;
+		font-size:13px;
+		color:#f0f0f0;
+	}
+	
+	.contacto a:link, .contacto a:hover, .contacto a:visited{
+		display:flex;
+		width:6.5%;
+		height:auto;
+		text-decoration:none;
+		margin-right:1.5%;
+	}
+	
+.contratos_reglas{
+	display:flex;
+	width:43%;
+	height:auto;
+	justify-content:space-around;
+	align-items:center;
+}
+
+	/*Dentro de .contratos_reglas*/
+	
+	.contratos_reglas div{
+		width:30%;
+		height:auto;
+	}
+
+/*Celular*/
+@media screen and (max-width:800px){
+	
+	/*Header*/
+	
+	header{
+		width:96%;
+		flex-direction:column;
+		align-items:center;
+		padding:2%;
+	}
+	
+	.logo{
+		width:90%;
+		height:auto;
+		margin-bottom:8px;
+	}
+	
+	nav{
+		flex-direction:column;
+		align-items:center;
+	}
+	
+	nav a:link, nav a:visited{
+		width:100%;
+		font-size:24px;
+		margin-bottom:8px;
+	}
+	
+	nav a:hover{
+		width:100%;
+	}
+	
+	/*Main*/
+	
+	/*Index*/
+	
+	main h1{
+		font-size:30px;
+		text-align:center;
+	}
+	
+	p{
+		font-size:20px;
+		text-align:center;
+		margin-left:2%;
+		margin-right:2%;
+	}
+	
+	.padre{
+		flex-direction:column;
+		align-items:center;
+	}
+	
+		/*Dentro de .padre*/
+		
+		.ficha{
+			width:90%;
+			padding:2%;
+		}
+		
+			/*Dentro de .ficha*/
+		
+			.imagen{
+				width:19%;
+			}
+		
+				/*Dentro de .texto*/
+				
+				.texto h2{
+					font-size:23px;
+				}
+				
+				.texto p{
+					font-size:18px;
+					line-height:25px;
+				}
+	
+	/*Habitaciones*/
+	
+	.std{
+		width:95%;
+		flex-direction:column;
+		margin-top:10px;
+	}
+	
+	.sup{
+		width:95%;
+		flex-direction:column;
+	}
+	
+		/*Dentro de .std y .sup*/
+		
+		.std .imagen2{
+			width:100%;
+		}
+		
+		.std .texto2{
+			width:100%;
+		}
+		
+		.sup .imagen2{
+			width:100%;
+		}
+		
+		.sup .texto2{
+			width:100%;
+		}
+		
+			/*Dentro de .texto2*/
+			/*20 16 14*/
+			.texto2 h2{
+				font-size:23px;
+			}
+			
+			.texto2 p{
+				font-size:18px;
+				line-height:27px;
+			}
+			
+			.texto2 ul{
+				font-size:17px;
+				line-height:26px;
+			}
+			
+				/*Dentro de ul*/
+				
+				li{
+					margin-bottom:23px;
+				}
+	
+	/*Footer*/
+	
+	footer{
+		width:96%;
+		flex-direction:column;
+		padding:2%;
+	}
+	
+	.logo_alt{
+		width:35%;
+	}
+	
+	.contacto{
+		width:90%;
+		justify-content:center;
+		margin-bottom:12px;
+	}
+	
+		/*Dentro de .contacto*/
+		
+		.contacto p{
+			font-size:18px;
+			text-align:center;
+		}
+		
+		.contacto a:link, .contacto a:hover, .contacto a:visited{
+			width:10%;
+		}
+	
+	.contratos_reglas{
+		width:90%;
+		flex-direction:column;
+	}
+	
+		/*Dentro de .contratos_reglas*/
+		
+		.contratos_reglas div{
+			width:50%;
+		}
+}
